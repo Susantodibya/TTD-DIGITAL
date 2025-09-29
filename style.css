@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f9fb;
+}
+.canvas-container {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    overflow: hidden;
+    max-width: 100%;
+}
+#documentCanvas {
+    /* Kursor akan diatur secara dinamis oleh JavaScript */
+    cursor: crosshair; 
+    display: block;
+    touch-action: none; /* Penting untuk drag di perangkat sentuh */
+}
+/* Kanvas kecil untuk preview tanda tangan */
+#signaturePreviewCanvas {
+    border: 1px dashed #4f46e5;
+    background-color: #fff;
+}
+.file-input {
+    appearance: none;
+    display: block;
+}
+.file-input-label:hover {
+    background-color: #e0e7ff; /* indigo-100 */
+}
+/* Style untuk menampilkan User ID */
+#userIdDisplay {
+    font-size: 0.75rem; /* text-xs */
+    color: #6b7280; /* text-gray-500 */
+    word-break: break-all;
+    margin-top: 4px;
+}
